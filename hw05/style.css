@@ -1,0 +1,55 @@
+.main-block {
+	width: 560px;
+	height: 560px;
+	margin: 0 auto;
+	border: 1px solid black;
+	float: right;
+	margin-right: 48px;
+}
+
+.block {
+	width: 70px;
+	height: 70px;
+	float: left;
+}
+
+.black {
+	background: #000;
+}
+
+.white {
+	background: #fff;
+}
+
+.main {
+	position: relative;
+	margin: 0 auto;
+	width: 675px;
+}
+
+.main-column {
+	margin-left: 38px;
+}
+
+.letters {
+	list-style-type: none;
+	display: inline-block;
+	padding-right: 41px;
+
+}
+
+.numbers {
+	list-style-type: none;
+	padding-bottom: 33px;
+}
+
+.column {
+	font-size: xx-large;
+	margin: 0 auto;
+
+}
+
+.row {
+	font-size: xx-large;
+	margin-top: 20px;
+}
