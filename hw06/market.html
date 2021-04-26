@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		button {
+			font-family: sans-serif;
+			display: block;
+			color: black;
+			font-size: 17px;
+			font-weight: 400;
+			text-align: justify;
+			text-decoration: none;
+			background-color: white;
+			width: 132px;
+			height: auto;
+			padding: 10px;
+			text-align: center;
+			margin: 5px;
+			text-transform: uppercase;
+			border-radius: 15%;
+			font-family: fantasy;
+				
+		}
+
+		button:hover {
+			color: white;
+			background-color: black;
+			font-family: cursive;
+			border-radius: 30%;
+		}
+		
+		button:active{
+			outline: none;
+		}
+		button:focus{
+			outline: none;
+		}
+
+		p {
+			color: #010101;
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 24px;
+			text-align: center;
+		}
+
+		.item p {
+			color: rebeccapurple;
+			font-size: 26px;
+			font-weight: 300;
+			line-height: 24px;
+			text-align: center;
+			background-color: white;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.Container {
+			width: 1280px;
+			margin: 0 auto;
+			background-color: White;
+			height: 100%;
+			height: 2000px;
+		}
+
+		.summ {
+			font-family: sans-serif;
+			color: #010101;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 24px;
+			text-align: center;
+			width: 300px;
+			height: 100px
+		}
+
+		.Recycle {
+
+			margin-left: 0 auto;
+		}
+
+		.Recycle h1 {
+			padding-left: 200px;
+		}
+
+		#recycle {
+			width: auto;
+			height: auto;
+			border: 2px solid black;
+			margin: 5%;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+		#recycle .item_button {
+			display: none;
+		}
+
+		.del_button {
+			display: none;
+		}
+
+		#recycle .del_button {
+			display: block;
+		}
+		
+		.price{
+			font-family: fantasy;
+			color: darkslategray;
+		}
+
+		.Items {
+			width: auto;
+			display: flex;
+			padding: 5%;
+			height: 454px;
+			justify-content: space-between;
+			background-image: url(big/Layer8.png);
+			background-repeat: no-repeat;
+		}
+
+		#recycleButton {
+			float: right;
+		}
+
+		h1 {
+			font-family: sans-serif;
+			color: #000000;
+			font-size: 40px;
+			font-weight: 400;
+			line-height: 49.542px;
+			text-align: center;
+		}
+
+		.infoblock {
+			float: right;
+		}
+
+		.pick {
+			height: 250px;
+			width: 150px;
+		}
+		
+		.linka{
+			font-size: 25px;
+			text-decoration: none;
+			border-radius: 33%;
+			border: 1px solid red;
+			font-family: cursive;
+			color: blueviolet;
+			
+		}
+		.linka:hover{
+			color: fuchsia;
+			border: 2px solid black;
+		}
+		
+		.clearStr{
+			font-size: 20px;
+			font-family: cursive;
+		}
+		
+		
+		
+	</style>
+	<script src="shop.js" defer></script>
+</head>
+
+<body>
+	<div id='container' class='Container'>
+		
+		<h1>Наши предложения</h1>
+		<a href="index.html" class="linka">Вернуться на главную.</a>
+		<div class='Items'>
+			<div class='item' id='01' onclick>
+				<img src='samsung.jpg' class='pick'><br>
+				<p class='price' id='1'>1000</p>
+				<button class='item_button'>Купить дёшево</button>
+			</div>
+			<div class='item' id='02' onclick>
+				<img src='samsung.jpg' class='pick'><br>
+				<p class='price' id='2'>2000</p>
+				<button class='item_button'>Купить дёшево</button>
+			</div>
+			<div class='item' id='03'>
+				<img src='samsung.jpg' class='pick' onclick><br>
+				<p class='price' id='3'>3000</p>
+				<button class='item_button'>Купить дёшево</button>
+			</div>
+			<div class='item' id='04'>
+				<img src='samsung.jpg' class='pick' onclick><br>
+				<p class='price' id='4'>4000</p>
+				<button class='item_button'>Купить дёшево</button>
+			</div>
+			<div class='item' id='05'>
+				<img src='samsung.jpg' class='pick' onclick><br>
+				<p class='price' id='5'>5000</p>
+				<button class='item_button'>Купить дёшево</button>
+			</div>
+		</div>
+
+		<div class='RecycleContentFields'>
+			<h1>Ваша корзинка</h1>
+			<div class='recycleContent'>
+				<address></address>
+			</div>
+			<div class='infoblock'>
+				<p class='summ'>Сумма товаров</p>
+				<button id='clear'>Отчистить</button>
+
+			</div><br>
+			<div id='recycle' onclick>
+				<div id='infotext'><span class="clearStr">У вас тут пусто :/</span></div>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+</body>
+
+</html>
