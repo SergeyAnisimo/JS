@@ -17,6 +17,8 @@ function openImage(event) {
 	if (!seed) {
 	    return;
     }
+	
+	
 
     /* создаем картинку */
 	const image = document.createElement("img");
@@ -25,7 +27,12 @@ function openImage(event) {
     image.id  = `image-${seed}`;
     image.src = `https://picsum.photos/seed/${seed}/800`;
     image.alt = `Изображение ${seed}`
-
+	image.name = "r";
+	
+	if(image.src = null){
+		image.src = `https://picsum.photos/seed/${1}/800`;
+	}
+	
     /* добавляем новый блок в галерею */
     gallery.appendChild(image);
 }

@@ -1,38 +1,70 @@
-html, body {
-    height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
 }
 
 .gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
+
 .gallery img {
-    width: 400px;
-    height: 400px;
+	width: 400px;
+	height: 400px;
 }
 
 .thumbnails {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
 }
+
 .thumbnails img {
-    padding: 10px;
-    cursor: pointer;
-    transition: transform 150ms ease-in-out;
+	padding: 10px;
+	cursor: pointer;
+	transition: transform 150ms ease-in-out;
 }
+
 .thumbnails img:hover {
-    transform: translateY(-5px);
+	transform: translateY(-5px);
 }
+
+.content {
+	display: flex;
+	justify-content: center;
+}
+
+.buttonRight {
+	font-size: 25px;
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	margin-left: 520px;
+	margin-top: 190px;
+}
+
+.buttonLeft {
+	font-size: 25px;
+	display: flex;
+	justify-content: flex-start;
+	height: 35px;
+	margin-top: 190px;
+}
+
+.footer{
+	margin-left: 20px;
+}
+
+

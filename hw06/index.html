@@ -5,6 +5,8 @@
     <title>Урок 6 • Обработка событий в JavaScript • Событие нажатия</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="btnNext.js"></script>
+    <script type="text/javascript" src="btnBefore.js"></script>
 </head>
 <body>
     <div class="header">
@@ -12,9 +14,12 @@
         <a href="market.html">В магазин</a>
     </div>
     <div class="content">
+       <input type="button" alt="btnLeft" value="<" class="buttonLeft" onclick="bck()">
         <div class="gallery">
-            <img id="image-1" src="https://picsum.photos/seed/1/800" alt="Изображение 1">
+           
+            <img id="image-1" src="https://picsum.photos/seed/1/800" alt="Изображение 1" name="r" onerror="function err()">
         </div>
+        <input type="button" alt="btnRight" value=">" class="buttonRight" onclick="frw()" >
     </div>
     <div class="footer">
         <div class="thumbnails">
